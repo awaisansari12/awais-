@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Shop<span>Ease.</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <input type="text" id="searchInput"
+                    placeholder="Search products...">
+                <button class="cart-btn">
+                    🛒 Cart <span id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">NEW COLLECTION 2026</p>
+            <h1>Discover Your<br>Perfect Style.</h1>
+            <p>Shop the latest trends with amazing prices
+                and premium quality products.</p>
+            <a href="#products" class="shop-btn">Shop Now →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src=""
+                 alt="Fashion shopping store">
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="category-list">
+            <button class="category-btn active" data-category="All">All</button>
+            <button class="category-btn" data-category="Fashion">Fashion</button>
+            <button class="category-btn" data-category="Electronics">Electronics</button>
+            <button class="category-btn" data-category="Shoes">Shoes</button>
+            <button class="category-btn" data-category="Accessories">Accessories</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="section-heading">
+            <div>
+                <p class="small-title">OUR COLLECTION</p>
+                <h2>Featured Products</h2>
+            </div>
+            <p>Find your favorite products here.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p id="noResults" class="no-results" hidden>
+            No products found!
+        </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Get 20% Off Your First Order!</h2>
+        <p>Subscribe to our newsletter for exclusive offers.</p>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>Shop<span>Ease.</span></h2>
+        <p>Your favorite online shopping destination.</p>
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
